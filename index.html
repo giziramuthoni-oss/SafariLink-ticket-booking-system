@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta Charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SafariLink Matatu Ticket Booking System
+
+        </title>
+        
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><u>SafariLink Matatu Ticket Booking System</u></h1>
+
+        <p>book your matatu by filling the form below</p>
+
+        <form  Id="bookingForm" action="process.php" method="POST">
+<div>
+            <label for="Passenger Name">Passanger Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+            </div>
+
+            <div>
+            <label for="phone number">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            </div>
+
+            <div>
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+            <label for="Route">Route</label>
+            <select id="route" name="route">
+                <option>Select your Route</option>
+                <option>Nairobi-Nyeri</option>
+                <option>Nairobi-Kerugoya</option>
+                <option>Nairobi-Mombasa</option>
+                <option>Nairobi-Nakuru</option>
+
+            </select> <br><br>
+            </div>
+
+            <div>
+            <label for="seat">Seat Number</label>
+            <input type="number" id="seats" name="seats" min="1" required><br><br>
+            </div>
+
+            <div>
+            <label for="Travel Date">Travel Date</label>
+            <input type="date" id="travelDate" name="travelDate" required><br><br>
+            </div>
+
+            <div>
+            <input type="submit" value="Book Now"><br>
+            <input type="reset" value="Reset"><br>
+            </div>
+
+            
+        </form>
+    
+        <script src="script.js"></script>
+    </body>
+
+</html>
